@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Project</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <style>
+      body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #2a3132; 
+}
+.box {
+  width: 350px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  border: none;
+  border-radius: 25px;
+  text-align: center;
+}
+h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+/************** 
+ Input Fields
+***************/
+#username, #pass{
+  border: 2px solid #0097e6;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  padding: 15px 45px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 25px;
+  text-align: center;
+  transition: 250ms width ease, 250ms border-color ease;
+}
+/************** 
+   On Hover
+***************/
+#username:hover, #pass:hover{
+  width: 220px;
+}
+/************** 
+   On Focus
+***************/
+#username:focus, #pass:focus{
+  width: 250px;
+  border-color: #6fb98f;
+}
+/************** 
+ Submit Button
+***************/
+#submit{
+  border: 2px solid #2ecc71;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 15px 40px;
+  outline: none;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 200;
+  
+}
+/************** 
+   On Hover
+***************/
+#submit:hover{
+  background: #2ecc71;
+}
+@media only screen and (max-width: 800px) {
+  .box {
+    display: inline;
+    padding: 0;
+  }
+}
+/* @media all (max-width:480px) {
+  
+} */
+  </style>
+  <body>
+      <!-- Login card -->
+      <form class="box" action="" method="POST" target="_self">
+        <h1>login</h1>
+        <input type="text" name="username" id="username" placeholder="Username" autocomplete="off">
+        <input type="password" name="pass" id="pass" placeholder="Password" autocomplete="off">
+         <!-- <button type="submit" id="submit" value="login"><a  href="./finalblog.html">Login</a></button> -->
+         <a id="submit" href="./index.html">Login</a>
+      </form>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
